@@ -69,7 +69,9 @@ Ghost **16 Windows ማጠናከሪያ ተግባራት** እና **Azure ደህን
 ### የደህንነት ግምገማ
 ```powershell
 # Ghost ሞጁልን ጫን
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # የአሁኑን የደህንነት አቋም ይፈትሹ
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### አማራጭ 1: ቀጥተኛ አውራድ (ፈተና)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### አማራጭ 2: ሞጁል መትከያ
